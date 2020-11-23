@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    env_file:
+      - ./dev.env
+  nginx:
+    env_file:
+      - ./dev.env
+    ports:
+      - 8000:80
+  db:
+    env_file:
+      - ./dev.env
